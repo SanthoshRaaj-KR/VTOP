@@ -307,3 +307,40 @@ footer{
     justify-content: center;
     background-color:  rgba(36, 85, 163, 1);
 }
+
+/*Media Queries*/
+@media(min-width:720px)and(max-width:760px){
+  
+    .desig-img{
+        width:30px;
+        height:30px;
+    }
+    .third-container{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:720px){
+    .third-container{
+        flex-direction: column;
+    }
+    .designation{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap:1rem;
+    }
+    .student{
+        grid-area:1/1/2/2;
+    }
+    .employee{
+        grid-area: 1/2/2/3;
+    }
+    .parent{
+        grid-area: 2/1/3/2;
+    }
+    .alumni{
+        grid-area: 2/2/3/3;
+    }
+
+}
